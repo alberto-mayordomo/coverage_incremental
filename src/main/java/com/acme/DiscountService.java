@@ -7,7 +7,7 @@ public class DiscountService {
     if (vip) {
       result = result * 0.9;
     }
-    if (blackFriday && price > 100) {
+    if (blackFriday && price >= 100) {
       result = result - 20;
     }
     return result;
